@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function rss_feed_display_install() {
+  $config = \Drupal::service('config.factory')
+    ->getEditable('rss_feed_display.settings');
+  $config->set('rss_url', 'http://rss.cnn.com/rss/edition.rss');
+  $config->save();
+}

@@ -1,0 +1,15 @@
+rss_feed_display.link_list:
+  path: '/link-list'
+  defaults:
+    _title: 'RSS Feed Links'
+    _controller: '\Drupal\rss_feed_display\Controller\RSSFeedController::linkList'
+  requirements:
+    _permission: 'access content'
+
+rss_feed_display.settings:
+  path: '/admin/config/rss-feed-display-settings'
+  defaults:
+    _form: '\Drupal\rss_feed_display\Form\RSSFeedConfigForm'
+    _title: 'RSS Feed Settings'
+  requirements:
+    _permission: 'administer site configuration'

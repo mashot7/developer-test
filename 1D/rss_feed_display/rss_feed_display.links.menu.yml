@@ -1,0 +1,11 @@
+rss_feed_display.settings:
+  title: 'RSS Feed Settings'
+  parent: system.admin_config
+  route_name: rss_feed_display.settings
+  weight: 99
+
+rss_feed_display.link_list:
+  title: 'RSS Feed Links'
+  menu_name: main
+  route_name: rss_feed_display.link_list
+  weight: 99

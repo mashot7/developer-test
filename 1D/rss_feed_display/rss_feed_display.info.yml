@@ -1,0 +1,8 @@
+name: RSS Feed Display
+description: Display the contents of an RSS feed.
+core: 8.x
+type: module
+core_version_requirement: ^9.2 || ^10
+configure: rss_feed_display.settings
+dependencies:
+  - path:path
