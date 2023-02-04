@@ -1,0 +1,19 @@
+name: fetch-products-php
+recipe: lamp
+config:
+  webroot: .
+  php: 8.1
+
+services:
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+  mysql:
+    type: mysql
+
+proxy:
+  appserver:
+    - "fetch-products-php.lndo.site/"
+  phpmyadmin:
+    - "phpmyadmin.fetch-products-php.lndo.site"
