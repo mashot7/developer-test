@@ -1,3 +1,5 @@
+Note: Click to exercise label to check requirements
+
 **[1D](https://github.com/Exove/developer-test#1d-create-a-module-in-drupal)**
 <br/>
 Custom module for Drupal that shows the contents of an RSS feed.
